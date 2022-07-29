@@ -36,7 +36,7 @@ namespace SSX_Xbox_Modder.FileHandlers
                     modelHeader.Unknown2 = StreamUtil.ReadInt32(stream); //Leads To Bone
                     modelHeader.IKPointOffset = StreamUtil.ReadInt32(stream);
                     modelHeader.ModelDataOffset = StreamUtil.ReadInt32(stream);
-                    modelHeader.Unknown5 = StreamUtil.ReadInt32(stream); //Leads To Model Data Offset (Check Face3000 Brodi)
+                    modelHeader.UnknownOffset3 = StreamUtil.ReadInt32(stream);
                     modelHeader.TriStripDataOffset = StreamUtil.ReadInt32(stream);
                     modelHeader.Unknown7 = StreamUtil.ReadInt32(stream); //Blank
                     modelHeader.VertexOffset = StreamUtil.ReadInt32(stream);
@@ -84,7 +84,7 @@ namespace SSX_Xbox_Modder.FileHandlers
         public int Unknown2;
         public int IKPointOffset;
         public int ModelDataOffset;
-        public int Unknown5;
+        public int UnknownOffset3;
         public int TriStripDataOffset;
         public int Unknown7;
         public int VertexOffset;
